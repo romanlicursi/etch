@@ -1,0 +1,32 @@
+.square {
+    width: 10px; /* Width of each square */
+    height: 10px; /* Height of each square */
+    border: 1px solid black; /* Border for visibility */
+    display: flex; /* Optional, unless you're aligning content within squares */
+    flex-shrink: 0; /* Prevent squares from shrinking */
+}
+
+#container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 192px; /* Adjusted fixed width to fit 16 squares */
+    height: 192px; /* Adjusted fixed height to fit 16 squares */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+body {
+    display: flex; /* Use Flexbox */
+    flex-direction: column;
+    justify-content: space-around; /* Center the container */
+    align-items: center; /* Center the container */
+    height: 100vh; /* Full height of the viewport */
+}
+
+#etch {
+    font-weight: bold;
+    font-size: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(0, 191, 255);
+}
